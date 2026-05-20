@@ -13,6 +13,7 @@ pipeline {
 
                         sh """    
                             echo "Build"
+                            exit 1
 
                         """    
                 }
