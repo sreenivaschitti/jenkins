@@ -1,11 +1,11 @@
 pipeline {
+    agent {
+        node {
 
-    node {
+                label 'roboshop'
 
-            label 'roboshop'
-
+        }
     }
-    agent any
     stages {
         stage('Build') {
             steps {
