@@ -24,8 +24,16 @@ pipeline {
                 script {
 
                         sh """    
-                            echo "Build"
-                            exit 1
+                               echo "Hello ${params.PERSON}"
+
+                                echo "Biography: ${params.BIOGRAPHY}"
+
+                                echo "Toggle: ${params.TOGGLE}"
+
+                                echo "Choice: ${params.CHOICE}"
+
+                                echo "Password: ${params.PASSWORD}"
+                            
 
                         """    
                 }
