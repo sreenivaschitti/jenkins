@@ -51,6 +51,10 @@ pipeline {
             }
         }
         stage('Deploy') {
+
+            when {
+                    expression { "$params.DEPLOY" == "true" }
+            }
             steps {
                  script {
 
