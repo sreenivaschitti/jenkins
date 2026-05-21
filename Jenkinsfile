@@ -24,7 +24,7 @@ pipeline {
                 script {
 
                         sh """    
-                                echo "Helllo ${params.PERSON}"
+                                echo "Helo ${params.PERSON}"
 
                                 echo "Biography: ${params.BIOGRAPHY}"
 
